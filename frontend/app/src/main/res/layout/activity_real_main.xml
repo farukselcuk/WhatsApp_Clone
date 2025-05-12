@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image13"
+    tools:context=".RealMainActivity">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="681dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Chats"
+        android:textColor="#3BFA3B"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/image5"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/image5" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@+id/mainUserRecyclerView"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="298dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="settingsActivity"
+        android:visibility="visible"
+        app:srcCompat="@drawable/image14" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/textView18"
+        android:text="Button"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="675dp"
+        app:srcCompat="@drawable/image11" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="53dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/mainUserRecyclerView"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="13dp"
+        android:text="Button"
+        android:visibility="invisible" />
+
+</RelativeLayout>
